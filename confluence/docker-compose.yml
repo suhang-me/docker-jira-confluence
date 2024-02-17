@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+  confluence:
+    image: registry.cn-hongkong.aliyuncs.com/suhang-me/confluence:8.5.5
+    container_name: confluence-service
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - "8890:8090"
+    volumes:
+      - home_data:/var/confluence
+    restart: always
+    networks:
+      - network-bridge
+
+networks:
+  network-bridge:
+    driver: bridge
+
+volumes:
+  home_data:
+    external: false

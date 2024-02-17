@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+  jira:
+    image: registry.cn-hongkong.aliyuncs.com/suhang-me/jira:9.4.2
+    container_name: jira-service
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - "8880:8080"
+    volumes:
+      - home_data:/var/jira
+    restart: always
+    networks:
+      - network-bridge
+
+networks:
+  network-bridge:
+    driver: bridge
+
+volumes:
+  home_data:
+    external: false
