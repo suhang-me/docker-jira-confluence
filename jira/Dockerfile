@@ -2,11 +2,11 @@ FROM openjdk:11
 
 LABEL maintainer="suhang <me@su-hang.com>" version="9.4.2"
 
-ARG JIRA_VERSION=9.4.2
+ARG JIRA_VERSION=9.12.11
 # Production: jira-software jira-core
 ARG JIRA_PRODUCT=jira-software
 ARG AGENT_VERSION=1.3.3
-ARG MYSQL_DRIVER_VERSION=8.0.22
+ARG MYSQL_DRIVER_VERSION=8.0.29
 
 ENV JIRA_USER=jira \
     JIRA_GROUP=jira \
