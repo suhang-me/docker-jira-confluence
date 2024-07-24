@@ -1,12 +1,12 @@
 FROM openjdk:11
 
-LABEL maintainer="suhang <me@su-hang.com>" version="8.5.5"
+LABEL maintainer="suhang <me@su-hang.com>" version="8.5.12"
 
 ARG ATLASSIAN_PRODUCTION=confluence
 ARG APP_NAME=confluence
-ARG APP_VERSION=8.5.5
+ARG APP_VERSION=8.5.12
 ARG AGENT_VERSION=1.3.3
-ARG MYSQL_DRIVER_VERSION=8.0.22
+ARG MYSQL_DRIVER_VERSION=8.0.29
 
 ENV CONFLUENCE_HOME=/var/confluence \
     CONFLUENCE_INSTALL=/opt/confluence \

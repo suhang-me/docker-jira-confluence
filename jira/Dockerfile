@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-LABEL maintainer="suhang <me@su-hang.com>" version="9.4.2"
+LABEL maintainer="suhang <me@su-hang.com>" version="9.12.11"
 
 ARG JIRA_VERSION=9.12.11
 # Production: jira-software jira-core
